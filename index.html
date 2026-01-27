@@ -1,99 +1,53 @@
-[data-selector="GUIDE_MENU_BUTTON"] {
-  // width:48px !important;
-  // height:48px !important;
-  // border-radius:.5em !important;
-  -webkit-box-shadow:0 5px 11px 0 rgba(0,0,0,.2) !important;
-  box-shadow:0 5px 11px 0 rgba(0,0,0,.2) !important;
-  width:60px !important;
-  height:60px !important;
-  border:1px solid white !important;
-}
-[data-selector="PORTAL_HEADER"] {
-  padding-top:0px !important;
-  padding-bottom:0.5em !important;
-}
-[data-selector="PORTAL_TITLE"] {
-  font-size:1.4em !important;
-}
-[data-selector="PORTAL_SUBTITLE"] {
-  font-size:1.3em !important;
-}
-[data-selector="CHANNELS_WIDGET"] {
-  margin-top:10px !important;
-  margin-bottom:20px !important;
-}
-[data-selector="KB_WIDGET"] {
-  margin-top:18px !important;
-}
-.pcontainer *,.offerContainer * {
-  font-family:"Figtree" !important;
-}
-[data-selector="PORTAL_BODY"] .spacer {
-  display:none !important;
-}
-[data-selector^="GUIDE_CHANNEL_BUTTON_"] .icon.vertical[class*="svelte-"] {
-  border-radius:50% !important;
-}
-[data-selector="GUIDE_CHANNEL_BUTTON_3"] .icon.vertical[class*="svelte-"] img {
-  border-radius:0 !important;
-}
-[data-selector="KB_WIDGET_TITLE"] {
-  display:none !important;
-}
-[data-selector="GUIDE_CUSTOMER_PORTAL_CLOSE_BUTTON"] {
-  width:60px !important;
-  height:60px !important;
-  border:1px solid white !important;
-}
-[data-selector="GUIDE_MENU_BUTTON"] > [data-selector="GUIDE_CHANNEL_ICON"] {
-  width:50px !important;
-  height:50px !important;
-}
-[title="Continue chat"] {
-  width:40px !important;
-  height:40px !important;
-  right:0px !important;
-  bottom:0px !important;
-  top:auto !important;
-  left:auto !important;
-  transform:translate(27.5%,27.5%);
-  position:absolute;
-  cursor:pointer !important;
-}
-[data-selector="GUIDE_FRAME_CONTENT"] [class^="pcontainer "] {
-  right:50px !important;
-  bottom:90px !important;
-}
-#be-frame {
-  bottom:90px !important;
-  right:50px !important;
-}
-[data-selector^="OFFER_BUTTON_1"],[data-selector^="OFFER_BUTTON_2"],[data-selector^="OFFER_BUTTON_3"] {
-  border-radius:5px !important;
-  background-color:#008db3 !important;
-  color:#ffffff !important;
-}
-@media only screen and (max-width:600px) {
-  [data-selector="PORTAL_BODY"] [class^="portal-content "] {
-  margin-bottom:9em !important;
-}
-#be-frame {
-  bottom:0px !important;
-}
-}* {
-  font-family:"Figtree" !important;
-}
-[class^="UserProfile_Status__"],[class^="BrandLabel_BrandLabel__"] {
-  display:none !important;
-}
-[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {
-  background-color:#008db3 !important;
-  color:#ffffff !important;
-}
-[data-selector="AGENT_MESSAGE_BUBBLE"] {
-  background-color:#eaeaea !important;
-  color:#333333 !important;
-}
-[data-selector="ACTIVITY_BAR"] {
-  display:none !important;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CXone Guide Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #008db3;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CXone Guide Test Page</h1>
+        <p>This page is configured to test the CXone Guide widget.</p>
+        
+        <div class="info">
+            <strong>Status:</strong> Waiting for Guide widget to load...
+        </div>
+        
+        <h2>Test Content</h2>
+        <p>Browse around this page to trigger engagement rules.</p>
+        <p>The Guide widget should appear based on your configured rules.</p>
+        
+        <h3>Sample Sections</h3>
+        <p>Add more content here to test different engagement scenarios.</p>
+        <p>You can test scroll depth, time on page, and other triggers.</p>
+    </div>
+    
+    <!-- CXone Guide script will be inserted here by the platform -->
+    
+</body>
+</html>
