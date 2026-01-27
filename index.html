@@ -97,16 +97,10 @@
           bottom:90px !important;
           right:50px !important;
         }
-        
-        /* PROACTIVE OFFER BUTTONS - This is where the blue #008db3 comes from! */
-        [data-selector^="OFFER_BUTTON_1"],
-        [data-selector^="OFFER_BUTTON_2"],
-        [data-selector^="OFFER_BUTTON_3"] {
-          border-radius:5px !important;
-          background-color:#008db3 !important;
-          color:#ffffff !important;
-        }
-        
+        /* Custom Focus Outline for Accessibility */
+[data-selector="GUIDE_CHANNEL_BUTTON"]:focus-visible {
+  outline: 3px solid #ff7f50 !important;
+}
         @media only screen and (max-width:600px) {
           [data-selector="PORTAL_BODY"] [class^="portal-content "] {
             margin-bottom:9em !important;
